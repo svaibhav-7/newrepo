@@ -1,11 +1,15 @@
 {
-  "name": "ga2-e8aea0",
-  "image": "ghcr.io/devcontainers/features/python:1",
-  "features": {},
-  "extensions": [
-    "astral-sh.uv",
-    "ms-python.python"
-  ],
-  "postCreateCommand": "uv pip install fastapi",
-  "remoteUser": "vscode"
+    "name": "ga2-e8aea0",
+    "features": {
+        "ghcr.io/devcontainers/features/python:1": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "astral-sh.uv",
+                "ms-python.python"
+            ]
+        }
+    },
+    "postCreateCommand": "uv pip install fastapi"
 }
